@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <!--HTML5 Theme created by NORDiX-->
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -37,7 +37,9 @@
 <script type="text/javascript" src="./js/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="./js/gmap3.min.js"></script>
 <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<!--
 <script type="text/javascript" src="./js/raphael.js"></script>
+-->
 <script type="text/javascript" src="./js/jquery.progression.1.3.js"></script>
 <script type="text/javascript" src="./js/jquery.smooth-scroll.min.js"></script>
 <script type="text/javascript" src="./js/waypoints.min.js"></script>
@@ -61,43 +63,27 @@ $(document).ready(function() {
 	<link rel="apple-touch-icon" sizes="114x114" href="./images/apple-touch-icon-114x114.png">
 
 <meta charset="UTF-8"></head>
+
+
+
 <body>
 
-<script type="text/javascript">
-		$(document).ready(function() {
-			
-			$('a.op-cl').click(function() {
-			
-			if($(".change").css("left")!="0px"){
-				$(".change").animate({left:"0px"},{duration:1500,easing: 'easeOutExpo'});
-				$('.change').find('.op-cl').removeClass("aclose").addClass("aopen");
-			}else{
-				$(".change").animate({left:"-130px"},{duration:1500,easing: 'easeOutExpo'});
-				$('.change').find('.op-cl').removeClass("aopen").addClass("aclose");
-			}
 
-			  
-            });
-			
-		});
-</script>    
-<style>
-.change{ position:fixed; top:150px; left:0px; border:1px #cccccc solid; z-index:99999;background:#ffffff;}
-.change a.op-cl{display:block; width:30px; height:30px; text-indent:-9999px; position:absolute; top:-1px; right:-30px; border-bottom:1px #cccccc solid; border-top:1px #cccccc solid; border-right:1px #cccccc solid; z-index:10;}
-.aopen{ background:#ffffff url(./open-close.png) 0 -60px no-repeat;}
-.aclose{background:#ffffff url(./open-close.png) 0 0 no-repeat;}
-.color-change{ background:#ffffff; width:110px; padding:10px; display:inline-block;}
-.color-change li{ float:left; margin:0 10px 10px 0;}
-.color-change li.last{ margin-right:0;}
-.color-change li.titles{ width:110px; font-size:14px;}
-.color-change li.link{ width:110px; font-size:12px; margin-bottom:0;}
-.color-change li a.color{ display:block; width:30px; height:30px; text-indent:-9999px;}
-.color-change li a.links{ width:110px; font-size:13px;color:#25313d; text-align:center; display:block; text-transform:uppercase; padding:5px 0; border-bottom:#cccccc 1px solid;}
-</style>
 
+
+
+<!--section begin here -->
 <article>
-   <section id="portfolio">
    
+
+	 <!-- skills two begin here
+        <div class="container">
+        </div>
+		 -->
+
+
+    <section id="portfolio">
+
         <div class="divider-sections">
             <div class="container">
                 <div class="sixteen columns">
@@ -112,23 +98,26 @@ $(document).ready(function() {
         <div class="container">
             <div class="divider">
             </div>
-            <ul id="portfolio-filter" class="sixteen columns">
-                <li class="title">
-                    filter :
-                </li>
-                <li>
-                    <a href="javascript:void(0)" title="" class="currents">All</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" title="">Web</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" title="">Graphics</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" title="">Video</a>
-                </li>
-            </ul>
+
+		
+                <div class="eleven columns alpha block-info theme-default">
+                    <div id="sliders-port_1"  class="nivoSlider">
+                        <a href="./images/slider_img/img_slider.jpg" rel="prettyPhoto">
+                            <img alt="" src="./images/slider_img/img_slider-port.jpg">
+                        </a>
+                        <a href="./images/slider_img/img_slider.jpg" rel="prettyPhoto">
+                            <img alt="" src="./images/slider_img/img_slider-port2.jpg">
+                        </a>
+                        <a href="./images/slider_img/img_slider.jpg" rel="prettyPhoto">
+                            <img alt="" src="./images/slider_img/img_slider-port3.jpg">
+                        </a>
+                    </div>
+                </div>
+            <div class="divider">
+            </div>
+			
+			
+			
             <!-- portfolio extended item begin here -->
             <div id="post-images-item" class="item_block sixteen columns">
                 <a href="javascript:void(0)" class="close">
@@ -435,14 +424,12 @@ $(document).ready(function() {
             <div id="post-vimeo-item" class="item_block sixteen columns">
                 <a href="javascript:void(0)" class="close">
                 </a>
-				<!--
                 <div class="eleven columns alpha block-info theme-default">
                     <iframe src="http://sc.chinaz.com/"
                     width="600" height="350" frameborder="0" webkitAllowFullScreen mozallowfullscreen
                     allowFullScreen>
                     </iframe>
                 </div>
-				-->
                 <div class="five columns omega">
                     <ul class="porto-entry">
                         <li>
@@ -487,13 +474,11 @@ $(document).ready(function() {
             <div id="post-youtube-item" class="item_block sixteen columns">
                 <a href="javascript:void(0)" class="close">
                 </a>
-				<!--
                 <div class="eleven columns alpha block-info theme-default">
                     <iframe width="600" height="350" src="http://sc.chinaz.com/"
                     frameborder="0" allowfullscreen>
                     </iframe>
                 </div>
-				-->
                 <div class="five columns omega">
                     <ul class="porto-entry">
                         <li>
@@ -547,7 +532,6 @@ $(document).ready(function() {
                             Portfolio Item Nivo Slider
                         </p>
                     </div>
-					<!-- <span> 标签被用来组合文档中的行内元素 -->
                     <span class="loading-item">
                     </span>
                 </li>
@@ -659,9 +643,10 @@ $(document).ready(function() {
             </ul>
             <div class="divider">
             </div>
-        </div>
+
     </section>
-	</article>
+    
+</article>
 <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function() {
-						   
+$('.item_block').hide();					   
 //Google map setting
 
         $('#google_map').gmap3({
@@ -264,6 +264,21 @@ $('article > section').waypoint({
         directionNavHide: false,
         //Only show on hover
         controlNav: true,
+        pauseOnHover: true
+
+    });
+	
+	    $('#sliders-port_1').nivoSlider({
+        effect: 'random',   // 效果
+        slices: 15,			// 切片
+        animSpeed: 1000,	// 动画速度
+        //Slide transition speed
+        pauseTime: 4000,	// 暂停时间
+        directionNav: true,	// 方向切换
+        //Next & Prev
+        directionNavHide: false,	// 方向切换隐藏
+        //Only show on hover
+        controlNav: true,			// 控制
         pauseOnHover: true
 
     });
